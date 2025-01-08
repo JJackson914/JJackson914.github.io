@@ -4,18 +4,147 @@
     <meta charset="utf-8">
     <title>Jared Jackson</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <div class="terminal-loader">
-        <div class="terminal-header">
-            <div class="terminal-title">Status</div>
-            <div class="terminal-controls">
-                <div class="control close"></div>
-                <div class="control minimize"></div>
-                <div class="control maximize"></div>
+    <!-- Sections -->
+    <div class="section-container">
+        <div id="focused">About Me</div>
+        <div>Programming Languages</div>
+        <div>Work Experience</div>
+        <div>Projects</div>
+        <div>Links</div>
+    </div>
+
+    <!-- About Me -->
+    <div class="screen" id="active">
+        <div class="right column">
+            <div class="about-me-images">
+                <div class="about-me-image" id="pfp"></div>
+                <div class="about-me-image" id="drexel"></div>
             </div>
         </div>
-        <div class="text">Loading...</div>
+
+        <div class="left column">
+            <!-- Terminal modified from jeremyssocial on uiverse.io -->
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <div class="control close"></div>
+                        <div class="control minimize"></div>
+                        <div class="control maximize"></div>
+                    </div>
+                </div>
+                <div class="terminal-text-anim">Hello! My name is Jared Jackson.</div>
+                <div>
+                    <br>I am a Computer Science major at Drexel University.
+                    <br>I grew up in West Chester, Pennsylvania.
+                    <br><br>I enjoy coding, learning about a variety of topics, modding electronics, video games, and anime.
+                    <br><br>Technology has always fascinated me, so I am excited to learn more about how it functions and how it can be used in our day to day lives.
+                    <br><br>I am excited to continue to learn more about my major and explore my interests!
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Programming Languages -->
+    <div class="screen" style="display: none;">
+        <div class="top row">
+            <div class="language-circle" id="java">
+                <p>Java</p>
+            </div>
+            <div class="language-circle" id="c">
+                <p>C</p>
+            </div>
+            <div class="language-circle" id="cpp">
+                <p>C++</p>
+            </div>
+            <div class="language-circle" id="c-sharp">
+                <p>C#</p>
+            </div>
+        </div>
+
+        <div class="bottom row">
+            <div class="language-circle" id="python">
+                <p>Python</p>
+            </div>
+            <div class="language-circle" id="javascript">
+                <p>JavaScript</p>
+            </div>
+            <div class="language-circle" id="html">
+                <p>HTML</p>
+            </div>
+            <div class="language-circle" id="sql">
+                <p>SQL</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="screen" style="display: none;">
+        <div class="left column" style="animation: slide-in-bottom 2s ease-out;">
+            <img src="images/ces.png" style="width: 80%; margin-top: 50%; margin-bottom: 5%;">
+            <h2 style="font-size: 1.5vw;">Software Engineer Co-op</h2>
+            <h3 style="font-size: 1vw;">September 2022 - March 2023</h3>
+            <h3 style="font-size: 1vw;">Full-time, Hybrid</h3>
+            <ul style="font-size: 1.25vw;">
+                <li>Developed SQL scripts to update and correct company data in several different databases</li>
+                <li>Utilized C# and ASP.NET Core to develop an application programming interface (API) to report active tasks occurring within the company databases</li>
+                <li>Collaborated with Retail Operations Team to update database values and correct inconsistent data</li>
+            </ul>
+        </div>
+        <div class="right column" style="animation: slide-in-top 2s ease-out;">
+            <img src="images/righton.png" style="width: 48%; margin-top: 50%;">
+            <h2 style="font-size: 1.5vw;">Software Engineer Co-op</h2>
+            <h3 style="font-size: 1vw;">September 2021 - March 2022</h3>
+            <h3 style="font-size: 1vw;">Full-time, Hybrid</h3>
+            <ul style="font-size: 1.25vw;">
+                <li>Constructed company website and web application using React.JS</li>
+                <li>Collaborated with user experience designers to enhance interface and functionality of website</li>
+                <li>Met weekly with an experienced programmer in the field to help me advance my skills</li>
+            </ul>
+        </div>
+        <div class="top row" style="animation: slide-in-top 2.5s ease-out;">
+            <div style="text-align: center; margin-left: 17vw; margin-right: 1vw;">
+                <h2 style="font-size: 1.5vw;">Software Engineer Co-op</h2>
+                <h3 style="font-size: 1vw;">September 2023 - March 2024</h3>
+                <h3 style="font-size: 1vw;">Full-time, On-site</h3>
+            </div>
+            <div style="margin: 0; height: 9vw;">
+                <img src="images/comcast.png" style="height: 100%;">
+            </div>
+            <div style="margin-left: 1vw;">
+                <ul style="font-size: 1.25vw;">
+                    <li>Created automated scripts to evaluate system functionality,<br>user interface, and performance</li>
+                    <li>Executed automated scripts using Cypress and performed<br>manual quality assurance tests on new Xumo TV builds</li>
+                    <li>Analyzed broken test cases, diagnosed various issues, <br>and repaired scripts to work with newest builds</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="screen" style="display: none;">
+        <div class="left column" id="tabletop" style="text-align: center;">
+            <div style="position: relative;">
+                <img src="images/tabletop.png" style="width: 80%;">
+                <img src="tabletop-gallery/favicon.ico" id="camera">
+            </div>
+            <h2 style="font-size: 1.5vw;">Tabletop Gallery</h2>
+            <h3 style="font-size: 1vw;">December 2023</h3>
+            <p style="font-size: 1.25vw;">Developed a photo gallery website to simulate digital images as printed images spread across a table using HTML, CSS, JavaScript, and Linux</p>
+            <button id="tabletop-button" style="cursor: pointer;">Visit</button>
+        </div>
+        <div class="right column">
+
+        </div>
+    </div>
+
+    <!-- Links -->
+     <div class="screen" style="display: none;">
+        <div class="bottom row">
+            <p>Coming soon</p>
+        </div>
+     </div>
 </body>
 </html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-image: url('wood.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+    display: inline-block;
+}
+
+.photoCard {
+    border: 2px solid black;
+    padding: 0.3vw;
+    position: absolute;
+    background-color: white;
+    cursor: grab;
+}
+
+#photoInfo {
+    background-color: #151817;
+    opacity: 0.8;
+    position: fixed;
+    top: 3%;
+    right: 1vw;
+    width: 40vw;
+    height: 50vw;
+    text-align: center;
+    z-index: 9999;
+    color: white;
+    padding: 1vw;
+}
+
+.photoInfoLabel {
+    font-size: 2.5vw;
+    font-family: 'Agbalumo', 'Times New Roman', sans-serif;
+}
+
+.photoInfoText {
+    font-size: 2.25vw;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+#wallnot {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+}
+
+#ok {
+    height: 10vh;
+    width: 10vw;
+    cursor: pointer;
+    opacity: 10;
+    font-size: 2.5vw;
+    background-color: lightgreen;
+    border: 5px solid white;
+}
+
+.horizontal {
+    width: 9.8vw;
+    height: 13vh;
+}
+
+.vertical {
+    width: 13vh;
+    height: 9.8vw;
+    left: 40%;
+}
+
+.focused {
+    animation: focus 1s forwards;
+    z-index: 9998;
+    cursor: pointer;
+}
+
+.unfocused {
+    animation: unfocus 1s forwards;
+}
+
+.fadein {
+    animation: fadein 0.5s forwards;
+}
+
+.fadeout {
+    animation: fadeout 0.5s forwards;
+}
+
+@-webkit-keyframes focus {
+    from { -webkit-transform: scale(1); }
+    to { -webkit-transform: scale(4) rotate(0deg); top: 38vh; left: 18vw; }
+}
+
+@keyframes focus {
+    from { scale: 1; }
+    to { scale: 4; transform: rotate(0deg); top: 38vh; left: 18vw; }
+}
+
+@keyframes unfocus {
+    from { scale: 4; transform: rotate(0deg); top: 38vh; left: 18vw; }
+    to { scale: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 0.8; }
+    to { opacity: 0; visibility: hidden;}
+}
+
+@keyframes fadein {
+    from { opacity: 0; visibility: hidden;}
+    to { opacity: 0.8; }
+}
