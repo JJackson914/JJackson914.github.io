@@ -220,7 +220,7 @@
     width: 19vw;
   }
 
-  /* Programming Languages */
+  /* Technical Skills */
 
   .language-circle {
     width: 13vw;
@@ -311,6 +311,43 @@
     }
   }
 
+  /* Links */
+
+  .icon {
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 1vw;
+    cursor: pointer;
+
+    img {
+      width: 8vw;
+      height: 8vw;
+    }
+  }
+
+  #linkedin {
+    animation: pop-up-bottom 2s ease-out;
+  }
+
+  #github {
+    animation: pop-up-bottom 2.5s ease-out;
+  }
+
+  #email {
+    animation: pop-up-bottom 3s ease-out;
+  }
+
+  #resume {
+    animation: slide-in-right 3.5s ease-out;
+  }
+
+  #hans {
+    position: absolute;
+    height: 25vw;
+    right: -32vw;
+    animation: slide-in-right 3.5s ease-out 2 alternate forwards;
+  }
+
   /* Animations */
 
   @keyframes spin-bob {
@@ -377,11 +414,31 @@
     80% {
       transform: translateY(-2vw) rotate(300deg);
     }
-    100% {
+    85% {
       transform: translateY(0) rotate(360deg);
     }
   }
+
+  @keyframes pop-up-bottom {
+    0% {
+      transform: translateY(150vh);
+    }
+    75% {
+      transform: translateY(-3vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(150vw);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 
   @keyframes fade {
     0%{

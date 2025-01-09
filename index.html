@@ -10,15 +10,15 @@
 <body>
     <!-- Sections -->
     <div class="section-container">
-        <div id="focused">About Me</div>
-        <div>Programming Languages</div>
+        <div>About Me</div>
+        <div>Technical Skills</div>
         <div>Work Experience</div>
         <div>Projects</div>
-        <div>Links</div>
+        <div id="focused">Links</div>
     </div>
 
     <!-- About Me -->
-    <div class="screen" id="active">
+    <div class="screen" style="display: none;">
         <div class="right column">
             <div class="about-me-images">
                 <div class="about-me-image" id="pfp"></div>
@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <!-- Programming Languages -->
+    <!-- Technical Skills -->
     <div class="screen" style="display: none;">
         <div class="top row">
             <div class="language-circle" id="java">
@@ -142,9 +142,31 @@
     </div>
 
     <!-- Links -->
-     <div class="screen" style="display: none;">
+     <div class="screen" id="active">
         <div class="bottom row">
-            <p>Coming soon</p>
+            <div class="icon" id="linkedin">
+                <a href="https://www.linkedin.com/in/jared-jackson2001/" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+            </div>
+            <div class="icon" id="github">
+                <a href="https://github.com/JJackson914" target="_blank">
+                    <img src="images/github.svg" alt="GitHub Icon">
+                </a>
+            </div>
+            <div class="icon" id="email">
+                <a href="mailto:jmj379@drexel.edu">
+                    <img src="images/email.svg" alt="Email Icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="right column">
+            <object id="resume" data="Jared_Jackson_Resume.pdf" type="application/pdf" style="height: 40vw; width: 95%;">
+                <p>Unable to display resume.</p>
+                <a href="Jared_Jackson_Resume.pdf">Download it here</a>
+            </object>
+            <img id="hans" src="images/hans.png">
         </div>
      </div>
 </body>
