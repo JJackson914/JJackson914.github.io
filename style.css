@@ -27,6 +27,10 @@
     margin-bottom: 1.5vh;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   /* General */
 
   .row {
@@ -337,7 +341,7 @@
     animation: pop-up-bottom 3s ease-out;
   }
 
-  #resume {
+  #resume, #resume-button {
     animation: slide-in-right 3.5s ease-out;
   }
 

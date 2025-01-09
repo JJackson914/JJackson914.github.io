@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('tabletop-button').addEventListener("click", () => {
         window.location.href = "tabletop-gallery/";
     });
+
+    document.getElementById('resume-button').addEventListener("click", () => {
+        window.open('Jared_Jackson_Resume.pdf', '_blank');
+    });
 });
 
 function triggerScreen(screensIndex){
