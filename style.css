@@ -95,7 +95,8 @@
 
   .section-container > div {
     font-family:'DM Serif Text', sans-serif;
-    font-size: 3vw;
+    /* font-size: 3vw; */
+    font-size: 60px;
     opacity: 0.4;
 
     user-select: none;
@@ -104,9 +105,50 @@
 
   .section-container > #focused {
     font-weight: bold;
-    font-size: 3.5vw;
+    /* font-size: 3.5vw; */
+    font-size: 65px;
     opacity: 1;
     transition: transform 0.4s ease-in-out;
+  }
+
+  @media (max-width: 1140px) {
+    .section-container > div {
+      font-size: 40px;
+    }
+
+    .section-container > #focused {
+      font-size: 45px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .section-container > div {
+      font-size: 30px;
+    }
+
+    .section-container > #focused {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 570px) {
+    .section-container > div {
+      font-size: 20px;
+    }
+
+    .section-container > #focused {
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .section-container > div {
+      font-size: 10px;
+    }
+
+    .section-container > #focused {
+      font-size: 15px;
+    }
   }
 
   /* Prevent focused section from changing when hovered over */
@@ -160,10 +202,10 @@
     color: white;
     font-family: "Courier New", Courier, monospace;
     font-size: 1em;
-    padding: 1.5em 1em;
+    /* padding: 1.5em 1em; */
     width: 27vw;
     height: 26vw;
-    margin: 100px auto;
+    margin: 50px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     overflow: hidden;
@@ -174,6 +216,7 @@
   /* Font size for terminal window */
   .terminal > div {
     font-size: 1vw;
+    /* margin-left: 0.5em; */
   }
   
   .terminal-header {
@@ -220,7 +263,8 @@
     overflow: hidden;
     border-right: 0.2em solid white; /* Cursor */
     animation: typeAndDelete 8s steps(32) forwards, blinkCursor 0.5s step-end infinite alternate;
-    margin-top: 1.5em;
+    margin-top: 3em;
+    margin-left: 0.5em;
     width: 19vw;
   }
 
