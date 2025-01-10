@@ -309,6 +309,11 @@
     animation: roll-in-left 4.5s ease-out;
   }
 
+  #typescript {
+    background-image: url(images/typescript.png);
+    animation: roll-in-left 4.5s ease-out;
+  }
+
   #cpp {
     background-image: url(images/cpp.png);
     animation: roll-in-left 4.25s ease-out;
